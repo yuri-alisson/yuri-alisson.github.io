@@ -1,69 +1,46 @@
-
-footer {
+footer{
     border: 1px solid black;
-}
-
-
+} 
 footer::after{
     content: 'mensagem fixa';
 }
 
-section {
-    display: flex;
-    flex-direction: column-reverse;
-    }
-
-.card, article {
-
-    border: 1px dashed blue;
-    background-color: rgba(00, 00, 255, .5);
-    padding: 16px;
-    margin-bottom: 8px;
-    border-top-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-
-    box-shadow: 8px 8px 16px green;
-    
-}
-
-body {
+body{
     display: grid;
     grid-gap: 16px;
     grid-template-areas: 
     "header header header "
-    "aside main main"
+    "aside main main "
     "footer footer footer";
     grid-template-columns: 20% auto auto;
-    grid-template-rows: auto 100vh auto;
-    background-image: url(https://thumbs.dreamstime.com/b/nahtloses-muster-mit-geometrischen-verzierungen-blau-und-wei%C3%9F-vector-illustration-165829910.jpg);
-    
+    grid-template-rows: auto 100vh auto ;
 
 }
 
-header {
+header{
     grid-area: header;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    }
-
-aside {
-    grid-area: aside;
-    overflow-y: scroll;
-    overflow-x: scroll;
 }
 
-main {
+aside{
+    grid-area: aside;
+     overflow-y: scroll;
+     overflow-x: scroll;
+}
+
+main{
     grid-area: main;
     overflow-y: scroll;
 }
-
-header, aside, main, footer {
-    background-color: whitesmoke;
-    color: black;
+ 
+header,aside,main,footer{
+    background-color: #21b;
+    color: white;
     padding: 16px;
 }
 
-footer {
+footer{
     grid-area: footer;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -71,12 +48,12 @@ footer {
 }
 
 aside ol li a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 a:hover{
-    color: red;
+    color: red; 
 }
 
 
