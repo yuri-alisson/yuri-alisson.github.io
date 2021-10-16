@@ -21,6 +21,7 @@ header{
     grid-area: header;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    position: fixed;
 }
 
 aside{
