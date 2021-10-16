@@ -8,7 +8,23 @@ footer::after{
     content: 'mensagem fixa';
 }
 
-article
+section {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+
+card, article {
+
+    border: 1px dashed blue;
+    background-color: rgba(00, 00, 255, .5);
+    padding: 16px;
+    margin-bottom: 8px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    box-shadow: 8px 8px 16px green;
+    
+}
 
 body {
     display: grid;
@@ -19,6 +35,9 @@ body {
     "footer footer footer";
     grid-template-columns: 20% auto auto;
     grid-template-rows: auto 100vh auto;
+    background-image: url(https://thumbs.dreamstime.com/b/nahtloses-muster-mit-geometrischen-verzierungen-blau-und-wei%C3%9F-vector-illustration-165829910.jpg);
+    
+
 }
 
 header {
