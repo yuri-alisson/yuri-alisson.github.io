@@ -1,0 +1,62 @@
+
+footer {
+    border: 1px solid black;
+}
+
+
+footer::after{
+    content: 'mensagem fixa';
+}
+
+article
+
+body {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-areas: 
+    "header header header "
+    "aside main main"
+    "footer footer footer";
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 100vh auto;
+}
+
+header {
+    grid-area: header;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    }
+
+aside {
+    grid-area: aside;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+main {
+    grid-area: main;
+    overflow-y: scroll;
+}
+
+header, aside, main, footer {
+    background-color: gray;
+    color: white;
+    padding: 16px;
+}
+
+footer {
+    grid-area: footer;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: red;
+}
+
+aside ol li a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
